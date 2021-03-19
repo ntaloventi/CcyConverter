@@ -273,7 +273,10 @@ class MainActivity : BaseActivity(), MainView, MyConnectivity.ConnListener {
                     needApiCall = true
                 }
             }
+        } else {
+            needApiCall = true
         }
+        
         if (needApiCall){
             if (online){
                 val pairUrl =  "/pair/".plus(srcCcy).plus("/").plus(dstCcy)
