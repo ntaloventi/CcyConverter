@@ -1,0 +1,156 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5630630726853315413",
+      "lastPropertyId": "15:4448804887352225873",
+      "name": "CcyPair",
+      "properties": [
+        {
+          "id": "1:7853283236866478000",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "9:7877388844194299482",
+          "name": "timeLastUpdateUnix",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "10:1897337805415819203",
+          "name": "timeNextUpdateUnix",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "11:4916319289744465942",
+          "name": "conversionRate",
+          "type": 8,
+          "flags": 2
+        },
+        {
+          "id": "12:8339516077910389195",
+          "name": "baseCode",
+          "type": 9
+        },
+        {
+          "id": "13:3233311046653845866",
+          "name": "targetCode",
+          "type": 9
+        },
+        {
+          "id": "14:1313572887944974429",
+          "name": "timeLastUpdateUtc",
+          "type": 9
+        },
+        {
+          "id": "15:4448804887352225873",
+          "name": "timeNextUpdateUtc",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:7460780360865854019",
+      "lastPropertyId": "21:5613826742706474760",
+      "name": "CurrencySaved",
+      "properties": [
+        {
+          "id": "1:7746153424140611612",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "12:9102258019062528284",
+          "name": "timeLastUpdateUnix",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "13:5196930618682819713",
+          "name": "timeNextUpdateUnix",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "14:5199171968580669101",
+          "name": "conversionRate",
+          "type": 8,
+          "flags": 2
+        },
+        {
+          "id": "15:63066416106721404",
+          "name": "baseCode",
+          "type": 9
+        },
+        {
+          "id": "16:6723037232907307960",
+          "name": "targetCode",
+          "type": 9
+        },
+        {
+          "id": "17:7297417025106959572",
+          "name": "timeLastUpdateUtc",
+          "type": 9
+        },
+        {
+          "id": "18:5840193142676693304",
+          "name": "timeNextUpdateUtc",
+          "type": 9
+        },
+        {
+          "id": "19:8582324581403704431",
+          "name": "userSrcAmount",
+          "type": 9
+        },
+        {
+          "id": "20:6270438027844497535",
+          "name": "userDestAmount",
+          "type": 9
+        },
+        {
+          "id": "21:5613826742706474760",
+          "name": "userTimeSaved",
+          "type": 5,
+          "flags": 2
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:7460780360865854019",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    2463296182142575313,
+    5802159185207838419,
+    4074535042332850118,
+    6109706822522616184,
+    904783699083106715,
+    4905879075754371211,
+    4809502088465379983,
+    82164124288221244,
+    2701678384941353483,
+    1767402299215732911,
+    5217067371910458357,
+    4851894980970978035,
+    2067340581396086957,
+    5365142072336388794,
+    7138325975875259810,
+    8461205240572947580,
+    3325299971973368458
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

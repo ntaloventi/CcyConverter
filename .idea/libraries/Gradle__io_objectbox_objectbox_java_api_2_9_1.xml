@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.objectbox:objectbox-java-api:2.9.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.objectbox/objectbox-java-api/2.9.1/8c507d015750ab8bcc01a381a9784600b567d004/objectbox-java-api-2.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.objectbox/objectbox-java-api/2.9.1/5556b31d0f3cb902611d59b66ec55bb87ebb3b8d/objectbox-java-api-2.9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.objectbox/objectbox-java-api/2.9.1/4a839fca35210f643d30ab64b3d36a751a09de7a/objectbox-java-api-2.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
