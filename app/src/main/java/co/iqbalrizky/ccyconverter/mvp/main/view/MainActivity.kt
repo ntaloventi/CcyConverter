@@ -264,30 +264,18 @@ class MainActivity : BaseActivity(), MainView, MyConnectivity.ConnListener {
             .build()
             .findFirst()
 
-        var needApiCall = false
+        var needApiCall = true
         if (result != null){
             val timeNextUpdateUnix: Int? = result.timeNextUpdateUnix
             val nowUnix: Int = (System.currentTimeMillis() / 1000).toInt()
             if (timeNextUpdateUnix != null){
-                if (nowUnix > timeNextUpdateUnix){
-                    needApiCall = true
+                if (nowUnix < timeNextUpdateUnix){
+                    needApiCall = false
                 }
             }
-        } else {
-            needApiCall = true
         }
-        
-        if (needApiCall){
-            if (online){
-                val pairUrl =  "/pair/".plus(srcCcy).plus("/").plus(dstCcy)
-                mPresenter.grabApiData(pairUrl)
-            } else {
-                val fragment: Fragment? = fm.findFragmentById(R.id.container)
-                if (fragment is Chart){
-                    fragment.releaseLock()
-                }
-            }
-        } else {
+
+        if (!needApiCall){
             if (result != null){
                 val fragment: Fragment? = fm.findFragmentById(R.id.container)
                 if (fragment != null){
@@ -296,6 +284,16 @@ class MainActivity : BaseActivity(), MainView, MyConnectivity.ConnListener {
                     } else if (fragment is Chart){
                         fragment.updatePairDataUi(result)
                     }
+                }
+            }
+        } else {
+            if (online){
+                val pairUrl =  "/pair/".plus(srcCcy).plus("/").plus(dstCcy)
+                mPresenter.grabApiData(pairUrl)
+            } else {
+                val fragment: Fragment? = fm.findFragmentById(R.id.container)
+                if (fragment is Chart){
+                    fragment.releaseLock()
                 }
             }
         }
